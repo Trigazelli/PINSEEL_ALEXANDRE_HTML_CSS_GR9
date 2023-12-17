@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(#2833ae, #03697d);
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.titre {
+  display: flex;
+  justify-content: center;
+}
+
+.titre h1 {
+  color: aliceblue;
+}
+
+.content {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.general {
+  width: 33%;
+  border-radius: 8px;
+  justify-content: center;
+  display: flex;
+}
+
+.bloc-1 {
+  background-image: url(../images/subnautica.jpeg);
+  background-size: cover;
+  background-position: top;
+}
+
+.bloc-2 {
+  background-image: url(../images/Layton.jpeg);
+  background-size: cover;
+  background-position: top;
+}
+
+.bloc-3 {
+  background-image: url(../images/golden_sun.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+.general h1 {
+  color: antiquewhite;
+  font-size: 50px;
+  -webkit-text-stroke: 2px #000000;
+}
+
+@media screen and (max-width:800px) {
+
+  body {
+    background: #2833ae;
+  }
+
+  .bloc-2 {
+    display: flex;
+    background-position-x: 60%;
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .general {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+}
